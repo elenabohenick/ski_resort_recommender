@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>Ski-resort</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://images.unsplash.com/photo-1506256789321-96918cdaab36?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6bdaa6df7cc286a08af45a13b4f91cc6&auto=format&fit=crop&w=1500&q=80');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+  font-size: 16px;
+  width: 6in;
+}
+.transbox label{
+
+}
+.radio label input{
+  margin-right: 10px;
+
+}
+.checkbox label input{
+  margin-right: 10px;
+
+}
+media="screen">
+    .container {
+      font-size: 16px;
+      width: 6in;
+    }
+div.transbox {
+    margin: 10px;
+    background-color: #00334d;
+    padding: 25px;
+    opacity: 0.9;
+    }
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Discover Ski-Resorts</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <div class="container">
+  <div class="transbox">
+  <br>
+  <br>
+  <form action="/results" method="post">
+    <div class="form-group">
+       <!-- Geography -->
+      <label>Choose Geography:   </label>
+      <select class="form-control" name="geography"><br>
+        <option>Africa</option>
+        <option> - Lesotho</option>
+        <option>Asia</option>
+        <option> - Japan</option>
+        <option> - China</option>
+        <option> - Kyrgyzstan</option>
+        <option> - India</option>
+        <option> - South Korea</option>
+        <option>Europe</option>
+        <option> - Andorra</option>
+        <option> - Austria</option>
+        <option> - Bulgaria</option>
+        <option> - Czech Republic</option>
+        <option> - Finland</option>
+        <option> - France</option>
+        <option> - Germany</option>
+        <option> - Greece</option>
+        <option> - Italy</option>
+        <option> - Liechtenstein</option>
+        <option> - Norway</option>
+        <option> - Poland</option>
+        <option> - Romania</option>
+        <option> - Russia</option>
+        <option> - Serbia</option>
+        <option> - Slovakia</option>
+        <option> - Slovenia</option>
+        <option> - Spain</option>
+        <option> - Sweden</option>
+        <option> - Switzerland</option>
+        <option> - Turkey</option>
+        <option> - United Kingdom</option>
+        <option>Middle East</option>
+        <option> - Lebanon</option>
+        <option>North America</option>
+        <option> - Canada</option>
+        <option> - USA</option>
+        <option>  -- Alabama</option>
+        <option>  -- Alaska</option>
+        <option>  -- Arizona</option>
+        <option>  -- California</option>
+        <option>  -- Colorado</option>
+        <option>  -- Connecticut</option>
+        <option>  -- Idaho</option>
+        <option>  -- Illinois</option>
+        <option>  -- Indiana</option>
+        <option>  -- Iowa</option>
+        <option>  -- Maine</option>
+        <option>  -- Maryland</option>
+        <option>  -- Massachusetts</option>
+        <option>  -- Michigan</option>
+        <option>  -- Minnesota</option>
+        <option>  -- Missouri</option>
+        <option>  -- Montana</option>
+        <option>  -- Nevada</option>
+        <option>  -- New Hampshire</option>
+        <option>  -- New Jersey</option>
+        <option>  -- New Mexico</option>
+        <option>  -- New York</option>
+        <option>  -- North Carolina</option>
+        <option>  -- Ohio</option>
+        <option>  -- Oregon</option>
+        <option>  -- Pennsylvania</option>
+        <option>  -- South Dakota</option>
+        <option>  -- Utah</option>
+        <option>  -- Vermont</option>
+        <option>  -- Virginia</option>
+        <option>  -- Washington</option>
+        <option>  -- West Virginia</option>
+        <option>  -- Wisconsin</option>
+        <option>  -- Wyoming</option>
+        <option>South America</option>
+        <option> - Argentina</option>
+        <option> - Bolivia</option>
+        <option> - Chile</option>
+        <option>South Pacific </option>
+        <option> - Australia</option>
+        <option> - New Zealand</option>
+      </select>
+      <br>
+      <br>
+    </div>
+     <!-- Beginner -->
+    <label>What is your ski/snowboard ability level?</label>
+    <div class="radio">
+      <label><input type="radio" name="ability_level" value="0">Beginner</label><br>
+      <label><input type="radio" name="ability_level" value="1">Intermediate</label><br>
+      <label><input type="radio" name="ability_level" value="2">Advanced</label>
+    </div>
+    <br>
+     <!-- Powder -->
+    <label>Do you prefer to ride on groomed trails or powder?</label>
+    <div class="radio">
+      <label><input type="radio" name="snow_conditions"  value="0">Groomed</label><br>
+      <label><input type="radio" name="snow_conditions"  value="1">Powder</label>
+    </div>
+    <br>
+     <!-- Family-friendly -->
+      <label>Do you prefer family-friendly ski-resorts?</label>
+      <select class="form-control" name="family_friendly">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <br>
+      <br>
+      <!-- Kids lesssons -->
+      <label>Is having kids ski-lessons important to you?</label>
+      <select class="form-control" name="kids">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <br>
+      <br>
+      <!-- Ski-resort features -->
+    <label>Choose ski-resort features that are important to you</label>
+    <div class="checkbox"  name="resort_features">
+      <label><input type="checkbox" name="feat_1" value="1">Scenic Views</label><br>
+      <label><input type="checkbox" name="feat_2" value="2">High Quality Restaurants</label><br>
+      <label><input type="checkbox" name="feat_3" value="3">Lift-Line Wait Times</label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+</div>
+  </div>
+</div>
+
+</body>
+</html>

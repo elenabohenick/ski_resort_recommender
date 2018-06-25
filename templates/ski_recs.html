@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://images.unsplash.com/photo-1511984212987-27f5efecd5a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4d368e7ddce7ca45b89b6703fcfcc70&auto=format&fit=crop&w=2550&q=80');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+  width:100%;
+  height: 100%;
+  background:rgb(10,10,10);
+  opacity: .4;
+  position: absolute;
+}
+.container {
+  font-size: 16px;
+  width: 6in;
+  text-shadow: #000 0px 0px 10px;
+}
+h1{
+  text-shadow: #444 0px 0px 10px;
+
+}
+
+</style>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="overlay">
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">Ski-resorts for you!</h1>
+      <div class="container">
+        <div class="transbox">
+      {% for rec in recommendation %}
+      <p><h1><a href="{{ rec[1] }}">{{ rec[0] }}</a></h1></p>
+      {% endfor %}
+      </div>
+    </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
